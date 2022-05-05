@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aulaoDaMassa</title>
+
+</head>
+<body>
+
+    <div>
+
+        <center>
+            <img src="img/original-61f8610472d4f.png" alt="uni" height="100px">
+            <nav>
+
+                <a href="index.html"> Home</a>
+                <a href="empresa.html"> Empresa</a>
+                <a href="servicos.html"> Servicos</a>
+                <a href="contato.html"> Contato</a>
+                <a href="cadastro.html"> Cadastro</a>
+
+            </nav>
+        </center>
+
+    <form action="enviaemail.cs" method="post">
+        <p><label>Name: </label>
+        <input type="text" name="nome" readonly placeholder="Informe seu nome completo"></p>
+
+        <p><label>CPF: </label>
+            <input type="number" name="CPF" readonly placeholder="Informe seu CPF"></p>
+
+            <p><label>RG: </label>
+                <input type="number" name="RG" readonly placeholder="Informe seu RG"></p>
+
+        <p><label> E-mail: </label>
+            <input type="email" name="email" placeholder="Informe seu E-mail" required></p>
+
+                <p><label>Rua: </label>
+                    <input type="text" name="Rua" readonly placeholder="Informe sua Rua"></p>
+
+                    <p><label>N°: </label>
+                        <input type="number" name="N°" readonly placeholder="Informe seu numero"></p>
+                        
+                        <p><label>Bairro: </label>
+                            <input type="text" name="Bairro" readonly placeholder="Informe seu bairro"></p>
+
+                            <p><label>Cidade: </label>
+                                <input type="text" name="cidade" readonly placeholder="Informe sua cidade"></p>
+
+                                <p><label>Estado: </label>
+                                    <input type="text" name="Estado" readonly placeholder="Informe sua estado"></p>
+
+                                    
+
+
+        <p><select name="estado">
+                <option value="">Selecione o estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapa</option>
+                <option value="AM">Amozonas</option>
+                <option value="OT">Outro...</option></p>
+        </select>
+
+        <label>Sexo: </label>
+        <span>
+            Masculino <input type="radio" name="Sexo" value="M">
+            <p>Feminino <input type="radio" name="Sexo" value="F"></p>
+
+        </span>
+
+        <p><label>Nacionalidade: </label>
+        <input type="checkbox" name="Nacionalidade" value="Brasileiro">Brasileiro
+        <input type="checkbox" name="Nacionalidade" value="Outro">Outro</p>
+
+    <center><p><h4><label> Senha:</label>
+        <input type="password" name="senha" placeholder="Informe sua senha" disabled></p></h4>
+
+        <button type="submit">Enviar</button>
+        
+        <input type="reset" name="enviar" >
+    </center>
+
+    </form>
+
+
+
+</body>
+</html>

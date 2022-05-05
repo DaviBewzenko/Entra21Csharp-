@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aulaoDaMassa</title>
+
+</head>
+<body>
+
+    <div>
+
+        <center>
+            <img src="img/original-61f8610472d4f.png" alt="uni" height="100px">
+            <nav>
+
+                <a href="index.html"> Home</a>
+                <a href="empresa.html"> Empresa</a>
+                <a href="servicos.html"> Servicos</a>
+                <a href="contato.html"> Contato</a>
+                <a href="cadastro.html"> Cadastro</a>
+
+            </nav>
+        </center>
+
+    <form action="enviaemail.cs" method="post">
+        <p><label>Name: </label>
+        <input type="text" name="nome" readonly placeholder="Informe seu nome completo"></p>
+
+        <p><label> E-mail: </label>
+        <input type="email" name="email" placeholder="Informe seu E-mail" required></p>
+
+        <p><select name="estado">
+                <option value="">Selecione o estado</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="BC">Balneario Camboriu</option>
+        </select>
+        
+        <input type="datetime-local" name="data"></p>
+
+        <label>Sexo: </label>
+        <span>
+            Masculino <input type="radio" name="Sexo" value="M">
+            Feminino <input type="radio" name="Sexo" value="F">
+
+        </span>
+
+        <label>Comidas: </label>
+        <input type="checkbox" name="comida" value="Lasanha">Lasanha
+        <input type="checkbox" name="comida" value="Peixe">Peixe
+        <input type="checkbox" name="comida" value="Porco">Porco
+        <input type="checkbox" name="comida" value="Arroz">Arroz
+
+    <center><p><h4><label> Senha:</label>
+        <input type="password" name="senha" placeholder="Informe sua senha" disabled></p></h4>
+
+        <button type="submit">Enviar</button>
+        
+        <input type="reset" name="enviar" >
+    </center>
+
+    </form>
+
+
+
+</body>
+</html>
