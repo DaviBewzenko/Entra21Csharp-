@@ -21,53 +21,52 @@
                 <a href="servicos.html"> Servicos</a>
                 <a href="contato.html"> Contato</a>
                 <a href="cadastro.html"> Cadastro</a>
+                <a href="novo.html"> Novo</a>
 
             </nav>
         </center>
 
-    <form action="enviaemail.cs" method="post">
-        <p><label>Name: </label>
-        <input type="text" name="nome" readonly placeholder="Informe seu nome completo"></p>
+    <form action="enviaemail.cs" method="post" autocomplete="on" enctype="multipart/form-data">
+        <p><label>Nome: </label>
+        <input type="text" name="nome" placeholder="Informe seu nome completo"></p>
 
         <p><label>CPF: </label>
-            <input type="number" name="CPF" readonly placeholder="Informe seu CPF"></p>
+            <input type="password" name="CPF" placeholder="Informe seu CPF" required></p>
 
             <p><label>RG: </label>
-                <input type="number" name="RG" readonly placeholder="Informe seu RG"></p>
+                <input type="password" name="RG" placeholder="Informe seu RG"></p>
 
         <p><label> E-mail: </label>
-            <input type="email" name="email" placeholder="Informe seu E-mail" required></p>
+            <input type="email" name="email" value="fulanoJesus@gmail.com" placeholder="Informe seu E-mail"></p>
 
                 <p><label>Rua: </label>
-                    <input type="text" name="Rua" readonly placeholder="Informe sua Rua"></p>
+                    <input type="password" name="Rua" placeholder="Informe sua Rua"></p>
 
                     <p><label>N°: </label>
-                        <input type="number" name="N°" readonly placeholder="Informe seu numero"></p>
+                        <input type="number" name="N°"placeholder="Informe seu numero"></p>
                         
                         <p><label>Bairro: </label>
-                            <input type="text" name="Bairro" readonly placeholder="Informe seu bairro"></p>
+                            <input type="text" name="Bairro" placeholder="Informe seu bairro"></p>
 
                             <p><label>Cidade: </label>
-                                <input type="text" name="cidade" readonly placeholder="Informe sua cidade"></p>
+                                <input type="text" name="cidade" placeholder="Informe sua cidade"></p>
 
-                                <p><label>Estado: </label>
-                                    <input type="text" name="Estado" readonly placeholder="Informe sua estado"></p>
 
                                     
 
 
         <p><select name="estado">
                 <option value="">Selecione o estado</option>
-                <option value="AC">Acre</option>
+                <option value="AC" selected>Acre</option>
                 <option value="AL">Alagoas</option>
                 <option value="AP">Amapa</option>
                 <option value="AM">Amozonas</option>
                 <option value="OT">Outro...</option></p>
         </select>
 
-        <label>Sexo: </label>
+        <p><label>Sexo: </label>
         <span>
-            Masculino <input type="radio" name="Sexo" value="M">
+            Masculino <input type="radio" name="Sexo" checked value="M"></p>
             <p>Feminino <input type="radio" name="Sexo" value="F"></p>
 
         </span>
@@ -76,8 +75,16 @@
         <input type="checkbox" name="Nacionalidade" value="Brasileiro">Brasileiro
         <input type="checkbox" name="Nacionalidade" value="Outro">Outro</p>
 
-    <center><p><h4><label> Senha:</label>
-        <input type="password" name="senha" placeholder="Informe sua senha" disabled></p></h4>
+        <center>
+        <label>Foto</label>
+        <input type="file" name="foto" multiple>
+
+        <p><textarea name="mensagem" cols="30" rows="10"></textarea></p>
+            <input type="hidden" name="codigoibge" value="1058483">
+
+        <p><label> Senha:</label>
+        <input type="password" name="senha" minlength="8" maxlength="" placeholder="Informe sua senha"></p>
+
 
         <button type="submit">Enviar</button>
         
