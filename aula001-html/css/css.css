@@ -1,0 +1,31 @@
+html, body{  
+    margin: 0;
+    padding: 0;
+}
+nav{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background: red;
+
+}
+
+img.logoSite{
+    float: left;
+    width: 500px;
+
+}
+
+nav a{
+    display: block;
+    width: auto;
+    height: 60px;
+    padding: 4px;
+    float: left;
+    line-height: 53px;
+    background: yellow;
+    color: #fff;
+    text-decoration: none;
+}
