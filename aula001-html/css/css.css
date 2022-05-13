@@ -6,6 +6,7 @@
 html, body{  
     margin: 0;
     padding: 0;
+    overflow: scroll-y ;
 }
 nav{
     position: absolute;
@@ -51,7 +52,7 @@ nav a{
 
 /* regras dos conteudos */
 main {
-    padding: 50px 0;
+    padding: 100px 0;
     background-color: white;
     border-radius: 30px;
 }
@@ -67,8 +68,10 @@ main {
     border-radius: 15px;
     box-shadow: 7px 11px 22px -3px rgba(0, 0, 0, 0.88);
     padding: 15px;
-    display: inline-block;
+    display: inline-block; /* talvez mudar para block */
+    min-height: 170px;
 }
+
 .homeArticle.active{
     background-color: white;
 }
@@ -92,13 +95,19 @@ main {
 }
 
 .homeArticle a{
+    /*tamanho*/
     display: inline-block;
     width: auto;
     padding: 4px;
+    text-align: center;
+    margin-left: -50px;
+    /*alinamento*/
     background-color: #23231A;
     text-decoration: none;
     border-radius: 5px;
     float: right;
+    position: relative; /* ou absolute */
+
 }
 
 .homeArticle a:hover{
@@ -106,3 +115,68 @@ main {
     padding: 4;
     transition: all 1s ease-in-out;
 }
+
+.carousel{
+    display: block;
+    width: 100%;
+    background: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.carousel li img{
+   width: 100%;
+   height: 400px;
+    
+
+}
+
+.carousel li{
+    width: 31%;
+   list-style: none;
+   display: inline-block;
+   margin: 0 1%;
+
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    background: red;
+    color: white;
+
+}
+
+footer span {
+    display: inline-block;
+    width: 48%;
+    padding: 10px;
+    color: white;
+}
+
+footer .assinatura {
+    text-align: right;
+}
+
+
+footer .assinatura a{
+    color: #ccc;
+    text-decoration: none;
+    padding-left: 25px;
+}
+
+/*
+
+footer .assinatura a:hoover{
+    text-decoration: underline;
+    background: url("/img/c.gif") left no-repeat;
+    background-size: 15%;
+}
+
+*/
+
