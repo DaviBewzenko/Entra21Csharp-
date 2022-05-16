@@ -53,7 +53,7 @@ nav a{
 /* regras dos conteudos */
 main {
     padding: 100px 0;
-    background-color: white;
+    background-color: red;
     border-radius: 30px;
 }
 
@@ -104,6 +104,7 @@ main {
     /*alinamento*/
     background-color: #23231A;
     text-decoration: none;
+    border: 1px solid red;
     border-radius: 5px;
     float: right;
     position: relative; /* ou absolute */

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Koulen&family=Roboto:ital,wght@0,400;0,700;1,400;1,900&family=Signika+Negative:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+
+    font-family: "Roboto", sans-serif;
+}
+
+nav{
+    position: relative;
+    width: 100%;
+    height: 8vh;
+    background: #37474F;
+    border-bottom: 5px solid #FFAD05;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.home {
+    color: #FFAD05;
+}
+
+nav a{
+    display: inline-flex;
+    width: auto;
+    height: 60px;
+    margin-top: -8px;
+    margin-left: 10px;
+    padding: 4px;
+    float: center;
+    line-height: 60px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img.logoSite{
+    float: left;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+
+.main {
+    width: 100vw;
+    height: 90vh;
+    margin-top: -65px;
+    background: #38AECC; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-tela {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    padding-top: 120px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-tela > h1{
+    color: #111618;
+    font-size: 58px;
+
+}
+
+.left-image {
+    width: 38vw;
+    margin-top: -30px;
+}
+
+.right-tela > h1{
+    text-align: center;
+    color: #111618;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 58px;
+    
+}
+
+.right-tela {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-image {
+    width: 15vw;
+    float: right;
+}
+
+.right-tela a {
+    width: auto;
+    border-radius: 10px;
+    padding: 4px;
+    text-align: center;
+    background-color: #FFAD05;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0px 10px 40px -12px black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 23px;
+
+}
+
+.btn-pagina a:hover {
+    background-color: gray;
+    padding: 4;
+    transition: all 1s ease-in-out;
+}
+
+
+main {
+    width: 100%;
+    height: 90vh;
+    background-color: #2E98B2;
+    display: block;
+}
