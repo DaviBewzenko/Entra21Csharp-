@@ -18,6 +18,7 @@ nav{
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
+    overflow-y: hidden;
 }
 
 .home {
@@ -59,6 +60,7 @@ img.logoSite{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: hidden;
 }
 
 .left-tela {
